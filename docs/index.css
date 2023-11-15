@@ -5,7 +5,7 @@
   font-family: 'Open Sans', sans-serif;
 } 
 
-<! -- Header: Container för hela headern. Ändra height här om ni vill reducera höjden på headern -->
+/* Header: Container för hela headern. Ändra height här om ni vill reducera höjden på headern */
 .headerBorder {
   border-top: 5px solid #00aeef;
   border-bottom: 15px solid #002d5a;
@@ -18,12 +18,12 @@
   position: relative;
 }
 
-<! -- Header: Container för innehåll i headern.  -->
+/* Header: Container för innehåll i headern.   */
 .headerContent {
   width: 80vw;
 }
 
-<! -- Logga: Container för logga -->
+/* Logga: Container för logga  */
 .imgWrapper {
   position: absolute;
 bottom: 50%;
@@ -34,13 +34,13 @@ main{
 }
 
 
-<! -- Navigering: -->
+/*  Navigering:  */
 nav {
   position: absolute;
   bottom: 0;
   text-align: start;
 }
-<! -- Navigering: ul & li är listan som navigeringen innehåller -->
+/* Navigering: ul & li är listan som navigeringen innehåller */ 
 ul {
   list-style: none;
   gap: 1rem;
@@ -52,7 +52,7 @@ li {
   font-weight: bold;
   bottom: -2px;
 }
-<! -- Navigering: A är taggen som innehåller länken -->
+/* Navigering: A är taggen som innehåller länken */
 a {
   text-decoration: none;
   color: #333333;
@@ -63,7 +63,7 @@ a:hover {
 }
 
 
-<! -- Innehållscontainer: Allt innehåll mellan header och footer -->
+/* Innehållscontainer: Allt innehåll mellan header och footer */
 .mainWrapper {
 padding-top: 2rem;
 display: flex;
@@ -72,7 +72,7 @@ align-items:center;
 }
 
 
-<! -- Innehållssektioner: -->
+/*  Innehållssektioner: (för text etc)  */
 .section {
   width: 80vw;
 }
