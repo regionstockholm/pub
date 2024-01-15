@@ -54,7 +54,7 @@ li {
 }
 /* Navigering: A är taggen som innehåller länken */
 a {
-  text-decoration: none;
+  text-decoration: underline;
   color: #333333;
   letter-spacing: 0.5px;
 }
