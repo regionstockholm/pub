@@ -3,13 +3,12 @@
   padding: 0;
   box-sizing: border-box;
   font-family: 'Open Sans', sans-serif;
-} 
+  background-color: rgba(231, 243, 249, 226);
+}
 
 /* Header: Container för hela headern. Ändra height här om ni vill reducera höjden på headern */
 .headerBorder {
-  border-top: 5px solid #00aeef;
-  border-bottom: 15px solid #002d5a;
-  background-color: white;
+  background-color: #002d5a;
   width: 100%;
   height: 175px;
   display: flex;
@@ -22,15 +21,42 @@
 .headerContent {
   width: 80vw;
 }
-
+.heading {
+  width: 80vw;
+  font-size: 2rem; /* Storlek på titeln, kan anges i px om ni vill det också */
+  color: #002d5a;
+  font-weight: 900;
+  line-height: 1.11;
+}
 /* Logga: Container för logga  */
 .imgWrapper {
+  height: 100px; /* Set the desired height */
+  width: auto;
   position: absolute;
-bottom: 50%;
+  bottom: 25%;
+}
+
+/* Bildens storlek sätts till 100% för att max ta upp 100 % av containern här ovan (.imgWrapper)*/
+.image {
+  height: 100%;
+  width:100%;
 }
 
 main{
   min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.white-frame {
+  margin-top: 2rem;
+  width: 80vw;
+  background-color: #ffffff;
+  padding: 10px 25px 25px 25px;
+  border-bottom-right-radius: 25px;
+  display: inline-block;
+  color: #002d5a;
 }
 
 
@@ -40,13 +66,13 @@ nav {
   bottom: 0;
   text-align: start;
 }
-/* Navigering: ul & li är listan som navigeringen innehåller */ 
+/* Navigering: ul & li är listan som navigeringen innehåller */
 ul {
   list-style: none;
   gap: 1rem;
   display: flex;
   position: relative;
-  bottom:-10px
+  bottom:0px
 }
 li {
   font-weight: bold;
@@ -55,11 +81,13 @@ li {
 /* Navigering: A är taggen som innehåller länken */
 a {
   text-decoration: none;
-  color: #333333;
+  color: white;
   letter-spacing: 0.5px;
 }
 a:hover {
-  border-bottom: 22px solid rgba(150, 148, 148, 0.308);
+  border-bottom: 2px solid white;
+
+/*   border-bottom: 22px solid rgba(226, 226, 226, 0.308); */
 }
 
 
@@ -79,7 +107,6 @@ align-items:center;
 
 .footer {
   bottom: 0;
-  border-top: 5px solid #00aeef;
   background-color: #002d5a;
   width: 100%;
   height: 175px;
