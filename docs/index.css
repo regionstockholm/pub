@@ -19,7 +19,7 @@
 
 /* Header: Container för innehåll i headern.   */
 .headerContent {
-  width: 80vw;
+  width: 83vw;
 }
 .heading {
   width: 80vw;
@@ -70,7 +70,6 @@ nav {
 }
 /* Navigering: ul & li är listan som navigeringen innehåller */
 ul {
-  list-style: none;
   gap: 1rem;
   display: flex;
   position: relative;
@@ -79,20 +78,22 @@ ul {
 li {
   font-weight: bold;
   bottom: -2px;
+  list-style: none;
 }
 
 .navLink {
   color: white;
+  list-style: none;
+  text-decoration: none;
 }
 /* Navigering: A är taggen som innehåller länken */
-.navLink:hover {
+ .navLink:hover {
   border-bottom: 2px solid white;
-  text-decoration: none;
-  letter-spacing: 0.5px;
 }
 
+
 .navLink.current {
-  color: rgb(67, 149, 190) /* Visa ljusblå färg på den länk som är aktiv */
+  border-bottom: 2px solid white;
 }
 
 
