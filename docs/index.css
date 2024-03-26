@@ -9,7 +9,6 @@
 /* Header: Container för hela headern. Ändra height här om ni vill reducera höjden på headern */
 .headerBorder {
   background-color: #002d5a;
-  width: 100%;
   height: 125px;
   display: flex;
   flex-direction: column;
@@ -19,7 +18,11 @@
 
 /* Header: Container för innehåll i headern.   */
 .headerContent {
-  width: 83vw;
+  width: 83%;
+  display:flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
 }
 .heading {
   width: 80vw;
@@ -31,15 +34,15 @@
 /* Logga: Container för logga  */
 .imgWrapper {
   height: 100px; /* Set the desired height */
-  width: auto;
+  width: 300px;
   position: absolute;
-  bottom: 25%;
+  bottom: 10%;
 }
 
 /* Bildens storlek sätts till 100% för att max ta upp 100 % av containern här ovan (.imgWrapper)*/
 .image {
-  height: 100%;
   width:100%;
+  height: 100%;
 }
 
 main{
@@ -61,19 +64,13 @@ main{
   color: #002d5a;
 }
 
-
-/*  Navigering:  */
-nav {
-  position: absolute;
-  bottom: 0;
-  text-align: start;
-}
 /* Navigering: ul & li är listan som navigeringen innehåller */
 ul {
   gap: 1rem;
   display: flex;
-  position: relative;
-  bottom:0px
+  position: absolute;
+  bottom:-10px;
+  padding: 0 0 0 ;
 }
 li {
   font-weight: bold;
